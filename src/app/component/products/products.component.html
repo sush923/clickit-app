@@ -1,0 +1,239 @@
+<div class="card-top container-fluid bg-secondary bg-gradient">
+    <div class="container d-flex">
+        <div class="item">
+            <a (click)="filter('fashion')">
+                <!-- <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt=""> -->
+                <h6 class="text-white">All products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('fashion')">
+                <!-- <img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt=""> -->
+                <h6 class="text-white">Dairy,Bread & Snacks</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('jewelery')">
+                <!-- <img style="width: 62px; margin-top: 5px;" src="https://cdn11.bigcommerce.com/s-ls8hir/images/stencil/original/products/14605/18476/682A9752__70245.1557786623.jpg?c=2&imbypass=on&imbypass=on" alt=""> -->
+                <h6 class="text-white"> Vegetables & Fruits</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('jewelery')">
+                <!-- <img style="width: 62px; margin-top: 5px;" src="https://cdn11.bigcommerce.com/s-ls8hir/images/stencil/original/products/14605/18476/682A9752__70245.1557786623.jpg?c=2&imbypass=on&imbypass=on" alt=""> -->
+                <h6 class="text-white">Breakfast & Intant Foods </h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('jewelery')">
+                <!-- <img style="width: 62px; margin-top: 5px;" src="https://cdn11.bigcommerce.com/s-ls8hir/images/stencil/original/products/14605/18476/682A9752__70245.1557786623.jpg?c=2&imbypass=on&imbypass=on" alt=""> -->
+                <h6 class="text-white"> Tea,Coffee & Health Drinks</h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of filterCategory | filter:searchKey:'title'">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+                <p><strong>Price:</strong> ${{item.price}}</p>
+                <button class="btn btn-primary" (click)=addtocart(item)>Add to cart</button>
+            </div>
+        </ng-container>
+
+    </div>
+</div> -->
+<section style="background-color: #eee;">
+    <div class="text-center container py-5">
+      <h4 class="mt-4 mb-5"><strong>Bestsellers</strong></h4>
+  
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+              data-mdb-ripple-color="light">
+              <img src="https://www.thespruceeats.com/thmb/ZnWDXm0VjfY2wy25ocFqZccy5YY=/2164x1217/smart/filters:no_upscale()/freshvegetablesAlexRaths-4c1ea186a88e4fd7b95283eee614600c.jpg"
+                class="w-100" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Vegetables Bundles For salad </h5>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category: Vegetables</p>
+              </a>
+              <h6 class="mb-3">$61.99</h6>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+              data-mdb-ripple-color="light">
+              <img src="https://andersondairy.com/wp-content/uploads/2018/07/half-gallon-one-percent-lowfat-buttermilk-anderson-dairy-products-1-600x800.jpg"
+                class="w-100" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-success ms-2">Eco</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">ButterMilk</h5>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category:Milk  product</p>
+              </a>
+              <h6 class="mb-3">$1.99</h6>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+              <img src="https://mishry.com/wp-content/uploads/2021/03/best-butter-brand-11-1024x492.jpg"
+                class="w-100" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-danger ms-2">-10%</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Butter</h5>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category: Milk product</p>
+              </a>
+              <h6 class="mb-3">
+                <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+              <img src="https://post.healthline.com/wp-content/uploads/2022/05/2068844-21-Healthy-Snacks-You-Can-Buy-at-Target_Recommended-by-a-Dietitian-1200x628-Facebook-1200x628.jpg"
+                class="w-100" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5>
+                      <span class="badge bg-success ms-2">Eco</span><span
+                        class="badge bg-danger ms-2">-10%</span>
+                    </h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Product name</h5>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category</p>
+              </a>
+              <h6 class="mb-3">
+                <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+              </h6>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+              data-mdb-ripple-color="light">
+              <img src="https://www.lays.com/sites/lays.com/files/2022-05/XL%20Lays%20Flamin%20Hot%20New.png"
+                class="w-100" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100"></div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Product name</h5>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category</p>
+              </a>
+              <h6 class="mb-3">$61.99</h6>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+              <img src="https://m.media-amazon.com/images/I/81DF9tHWcbL._SX569_.jpg"
+                class="w-100" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5>
+                      <span class="badge bg-primary ms-2">New</span><span
+                        class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
+                    </h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Product name</h5>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category</p>
+              </a>
+              <h6 class="mb-3">
+                <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
